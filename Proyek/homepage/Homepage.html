@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const bananaChipsCard = document.getElementById("banana-chips-card");
+    const popup = document.getElementById("product-popup");
+    const closePopup = document.querySelector(".close-popup");
+  
+    bananaChipsCard.addEventListener("click", () => {
+      popup.classList.remove("hidden");
+    });
+  
+    closePopup.addEventListener("click", () => {
+      popup.classList.add("hidden");
+    });
+  
+    window.addEventListener("click", (e) => {
+      if (e.target === popup) {
+        popup.classList.add("hidden");
+      }
+    });
+    });
+    </script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-brand">LOKALINE</div>
+    <img src="/image/lokalinelogo.png" alt="Logo Lokaline" class="65px" height="65px">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Cari produk UMKM">
+      <button class="search-button">
+        <img src="/image/search.png" alt="Search" class="search-icon">
+      </button>
+      <button class="login-button">Masuk</button>
+      <button class="register-button">Daftar</button>
+      <div class="cart-container">
+        <img src="/image/cart (2).png" alt="Keranjang" class="cart-icon">
+        <span class="cart-text">Keranjang</span>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-text">Selamat Datang di LOKALINE!</div>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card" id="banana-chips-card">
+        <img src="/image/banana chips.png" alt="Banana Chips">
+        <div class="product-details">
+          <h3>Banana Chips</h3>
+          <p class="price">Rp 15.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Jakarta</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/daster batik.png" alt="Daster Batik">
+        <div class="product-details">
+          <h3>Daster Batik</h3>
+          <p class="price">Rp 50.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Yogyakarta</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/cimol bojot.png" alt="Cimol Bojot">
+        <div class="product-details">
+          <h3>Cimol Bojot</h3>
+          <p class="price">Rp 10.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Bandung</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/kerupuk ikan lele.png" alt="Kerupuk Ikan Lele">
+        <div class="product-details">
+          <h3>Kerupuk Ikan Lele</h3>
+          <p class="price">Rp 20.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Surabaya</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/kacang.png" alt="Kacang">
+        <div class="product-details">
+          <h3>Kacang</h3>
+          <p class="price">Rp 12.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Medan</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/keripik usus.png" alt="Keripik Usus">
+        <div class="product-details">
+          <h3>Keripik Usus</h3>
+          <p class="price">Rp 18.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Makassar</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/mangkok kayu.png" alt="Mangkok Kayu">
+        <div class="product-details">
+          <h3>Mangkok Kayu</h3>
+          <p class="price">Rp 25.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Bali</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/abon.png" alt="Abon">
+        <div class="product-details">
+          <h3>Abon</h3>
+          <p class="price">Rp 22.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Semarang</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/ceker.png" alt="Ceker">
+        <div class="product-details">
+          <h3>Ceker</h3>
+          <p class="price">Rp 15.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Palembang</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/tas tradisional.png" alt="Tas Tradisional">
+        <div class="product-details">
+          <h3>Tas Tradisional</h3>
+          <p class="price">Rp 40.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Manado</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/seblak baper.png" alt="Seblak Baper">
+        <div class="product-details">
+          <h3>Seblak Baper</h3>
+          <p class="price">Rp 13.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Malang</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="/image/outer khas.png" alt="Outer Khas">
+        <div class="product-details">
+          <h3>Outer Khas</h3>
+          <p class="price">Rp 55.000</p>
+          <p class="seller"><img src="/image/location.png" alt="Alamat" class="icon"> Solo</p>
+        </div>
+      </div>
+    </section>
+    <div id="product-popup" class="popup hidden">
+      <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h3>Banana Chips</h3>
+        <p><strong>Harga:</strong> Rp 15.000</p>
+        <p><strong>Deskripsi:</strong> Keripik pisang yang renyah dan lezat, dibuat dari pisang pilihan.</p>
+        <p><strong>Penjual:</strong> UMKM Pisang Maju</p>
+        <p><strong>Daerah:</strong> Jakarta</p>
+        <button class="checkout-button">Checkout</button>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="about-us">
+        <h3>Tentang Kami</h3>
+        <p>LOKALINE adalah platform e-commerce yang mendukung dan mempromosikan produk-produk dari UMKM di seluruh Indonesia. Kami berkomitmen untuk membantu para pelaku usaha kecil dan menengah untuk tumbuh dan berkembang.</p>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 LOKALINE. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
